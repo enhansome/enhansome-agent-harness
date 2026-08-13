@@ -1,0 +1,842 @@
+{
+  "items": [
+    {
+      "description": "An agent harness is the infrastructure that wraps around an LLM coding agent. It's everything except the model itself: session management, context delivery, tool design, architectural enforcement, failure recovery, and human oversight.\nOpenAI's Harness Engineering blog defined the term: \"When a software engineering team's primary job is no longer to write code, but to design environments, specify intent, and build feedback loops that allow agents to do reliable work.\" Their team built 1M+ lines of production code with zero human-written lines using this approach.\nAnthropic's Claude Code team discovered the same principles from the tool design side: the harness matters more than the model. Fewer, more expressive tools beat a long menu of narrow ones. Progressive disclosure — letting the agent recursively discover context across layers — outperforms loading everything upfront. \"Designing an agent's action space is as much an art as it is a science.\"",
+      "items": [],
+      "title": "What is an Agent Harness?"
+    },
+    {
+      "description": "Orchestrators solve the throughput problem: at high agent velocity, you need parallel execution with worktree isolation so agents don't step on each other. As OpenAI found, \"corrections are cheap, waiting is expensive\" — these tools maximize concurrent agent throughput.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Everything Claude Code",
+          "description": "Skills, instincts, memory, and security harness for Claude Code and Codex.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2026-08-12T22:45:12Z",
+            "owner": "affaan-m",
+            "repo": "ECC",
+            "stars": 239842
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Oh My OpenCode",
+          "description": "Performance optimization harness for OpenCode with 44 lifecycle hooks.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T09:05:35Z",
+            "owner": "code-yeongyu",
+            "repo": "oh-my-openagent",
+            "stars": 67801
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Warp",
+          "description": "Agentic development environment built for coding with multiple AI agents.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2026-08-13T10:15:39Z",
+            "owner": "warpdotdev",
+            "repo": "warp",
+            "stars": 64182
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Oh My Claude Code",
+          "description": "Teams-first multi-agent orchestration for Claude Code. Ultrapilot mode runs 5 Claude Code instances in parallel Git worktrees, compressing 4-hour tasks to 50 minutes.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T04:21:06Z",
+            "owner": "Yeachan-Heo",
+            "repo": "oh-my-claudecode",
+            "stars": 38537
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Oh My Codex",
+          "description": "Hooks, agent teams, and HUD for Codex. Adds lifecycle hooks and multi-agent coordination on top of OpenAI's CLI agent.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T05:56:06Z",
+            "owner": "Yeachan-Heo",
+            "repo": "oh-my-codex",
+            "stars": 32642
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Vibe Kanban",
+          "description": "Kanban-based orchestrator with git worktree isolation per agent. Supports 10+ coding agents. Enforces the \"one agent, one worktree\" pattern that keeps parallel execution clean.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2026-04-24T09:17:34Z",
+            "owner": "BloopAI",
+            "repo": "vibe-kanban",
+            "stars": 27768
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Gas Town",
+          "description": "Steve Yegge's multi-agent workspace manager. Docker-based with a \"Mayor\" orchestrator that distributes work as \"beads\" across agent \"convoys.\" Includes web dashboard, git worktree isolation, and hook-based work state management.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2026-08-13T01:48:44Z",
+            "owner": "gastownhall",
+            "repo": "gastown",
+            "stars": 17594
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Trellis",
+          "description": "Git worktree-based multi-agent parallel harness. Isolates agents into separate worktrees for clean concurrent execution.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-11T12:08:50Z",
+            "owner": "mindfold-ai",
+            "repo": "Trellis",
+            "stars": 13899
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Composio Agent Orchestrator",
+          "description": "Agentic orchestrator for parallel coding agents. Plans tasks, spawns agents in isolated worktrees, autonomously handles CI fixes, merge conflicts, and code reviews.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2026-08-13T09:59:37Z",
+            "owner": "Untrivial-ai",
+            "repo": "agent-orchestrator",
+            "stars": 9469
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Emdash",
+          "description": "Open-source Agentic Development Environment (YC W26). Runs parallel agents in isolated worktrees, locally or over SSH — making the \"corrections are cheap\" principle practical for remote teams.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-12T15:00:53Z",
+            "owner": "generalaction",
+            "repo": "emdash",
+            "stars": 5400
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Scion",
+          "description": "Google's open-source multi-agent orchestration testbed. Manages \"deep agents\" (Claude Code, Gemini CLI, Codex) as isolated, concurrent processes — each gets its own container, git worktree, and credentials. Agent memory, chatrooms, and task management as orthogonal, pluggable modules.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2026-08-13T02:38:11Z",
+            "owner": "GoogleCloudPlatform",
+            "repo": "scion",
+            "stars": 1669
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Octogent",
+          "description": "Claude Code multi-agent orchestration dashboard. Humans control worker agents directly from the orchestration layer with real-time visibility into parallel execution.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-04-20T17:25:35Z",
+            "owner": "hesamsheikh",
+            "repo": "octogent",
+            "stars": 1401
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Oh My AG",
+          "description": "Multi-agent harness for Google Antigravity with 6 specialized agents.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T07:58:51Z",
+            "owner": "first-fluke",
+            "repo": "oh-my-agent",
+            "stars": 1223
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Desplega Agent Swarm",
+          "description": "Open-source multi-agent orchestration framework. Coordinates specialized AI agents (Claude Code-powered) through task delegation, session continuity, shared memory, and service discovery. Features include epics, scheduling, Slack integration, and cross-agent communication channels.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T07:23:48Z",
+            "owner": "desplega-ai",
+            "repo": "agent-swarm",
+            "stars": 694
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ruflo",
+          "description": "Claude agent orchestration with swarm mode. Coordinates multiple Claude Code agents for parallel task execution.",
+          "children": []
+        }
+      ],
+      "title": "Agent Orchestrators"
+    },
+    {
+      "description": "Task runners bridge the gap between issue trackers and coding agents. They embody the \"humans steer, agents execute\" principle: a human (or PM agent) creates the issue, the runner spawns an agent, and the output is a PR ready for review.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Symphony",
+          "description": "OpenAI's reference implementation of harness engineering. A daemon that polls Linear issues, spawns isolated Codex agents per task, and delivers PRs. Embodies \"humans steer, agents execute\" at scale.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Elixir",
+            "last_commit": "2026-08-12T18:19:49Z",
+            "owner": "openai",
+            "repo": "symphony",
+            "stars": 26550
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "ralph",
+          "description": "PRD-driven autonomous agent loop. Runs until all PRD items are completed, bridging spec-to-execution for single-agent workflows.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-02-02T01:46:21Z",
+            "owner": "snarktank",
+            "repo": "ralph",
+            "stars": 21463
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Dexto",
+          "description": "Coding agent and general agent harness for building agentic applications.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-12T00:05:08Z",
+            "owner": "truffle-ai",
+            "repo": "dexto",
+            "stars": 645
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Axon",
+          "description": "Kubernetes-native framework. Apply a Task CRD, get back a PR and cost in USD. TaskSpawner watches GitHub Issues.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2026-08-13T03:03:47Z",
+            "owner": "kelos-dev",
+            "repo": "kelos",
+            "stars": 292
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Linear Coding Agent Harness",
+          "description": "Linear → autonomous coding agent → PR pipeline.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-01-28T19:40:43Z",
+            "owner": "coleam00",
+            "repo": "Linear-Coding-Agent-Harness",
+            "stars": 228
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Baton",
+          "description": "Go implementation of Symphony. Polls Linear for claimable issues, spawns isolated Codex workspaces per issue, streams workflow prompts, and cleans up on completion.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Go",
+            "last_commit": "2026-03-07T13:20:21Z",
+            "owner": "shayne-snap",
+            "repo": "baton",
+            "stars": 10
+          }
+        }
+      ],
+      "title": "Task Runners"
+    },
+    {
+      "description": "Frameworks for building custom harnesses. Following the principle that \"fewer tools, more expressiveness\" beats sprawling toolkits, these provide composable primitives rather than opinionated workflows.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "DeerFlow 2.0",
+          "description": "ByteDance's open-source SuperAgent harness. Skill system with on-demand loading, sub-agent orchestration, sandboxed execution, and persistent memory. Built on LangGraph/LangChain.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T03:47:25Z",
+            "owner": "bytedance",
+            "repo": "deer-flow",
+            "stars": 79906
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "get-shit-done",
+          "description": "Meta-prompting and context engineering system for Claude Code. Structures work as milestone→phase→plan with progressive context delivery.",
+          "children": [],
+          "repo_info": {
+            "archived": true,
+            "language": "JavaScript",
+            "last_commit": "2026-05-31T17:46:54Z",
+            "owner": "gsd-build",
+            "repo": "get-shit-done",
+            "stars": 64711
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Deep Agents",
+          "description": "Agent harness built on LangChain/LangGraph. Implements progressive disclosure through planning tools and subagent spawning — agents discover context layer by layer rather than loading everything upfront.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T06:46:42Z",
+            "owner": "langchain-ai",
+            "repo": "deepagents",
+            "stars": 27723
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Compound Engineering Plugin",
+          "description": "Cross-agent standardized plugin for Claude Code, Codex, and Cursor. Unified harness interface across multiple coding agents.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T08:40:53Z",
+            "owner": "EveryInc",
+            "repo": "compound-engineering-plugin",
+            "stars": 24224
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "GenericAgent",
+          "description": "Self-evolving agent framework. Grows a skill tree from 3.3K lines of seed code, achieving 6x token efficiency reduction through learned capabilities.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T02:20:00Z",
+            "owner": "lsdefine",
+            "repo": "GenericAgent",
+            "stars": 13760
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Microsoft Agent Framework",
+          "description": "Microsoft's framework for building, orchestrating, and deploying AI agents and multi-agent workflows. Supports Python and .NET with structured orchestration patterns.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T08:40:59Z",
+            "owner": "microsoft",
+            "repo": "agent-framework",
+            "stars": 12766
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Hive",
+          "description": "Outcome-driven agent framework. Queen agent generates agent graphs, harness manages state, checkpoints, and cost tracking.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T01:52:10Z",
+            "owner": "aden-hive",
+            "repo": "hive",
+            "stars": 10904
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "EvoMap Evolver",
+          "description": "Genome Evolution Protocol (GEP) engine for agent self-evolution. Applies evolutionary algorithms to optimize agent behavior and harness configuration over time.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2026-08-09T16:24:22Z",
+            "owner": "EvoMap",
+            "repo": "evolver",
+            "stars": 8965
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Desloppify",
+          "description": "Agent harness focused on making AI-generated code well-engineered.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-13T20:17:05Z",
+            "owner": "peteromallet",
+            "repo": "desloppify",
+            "stars": 3020
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Zylos",
+          "description": "Persistent agent harness for Claude Code. Tiered memory system, skill-based progressive disclosure, multi-channel communication bridge, task scheduler, and activity monitor — enabling autonomous, long-running agents that remember across sessions.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2026-08-13T08:52:21Z",
+            "owner": "zylos-ai",
+            "repo": "zylos-core",
+            "stars": 1146
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Bridle",
+          "description": "TUI/CLI config manager for agent harnesses (Amp, Claude Code, OpenCode, Goose, Copilot CLI, Droid).",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2026-08-01T19:46:09Z",
+            "owner": "neiii",
+            "repo": "bridle",
+            "stars": 433
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Gambit",
+          "description": "Framework for building, running, and verifying LLM workflows.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-05-15T16:11:52Z",
+            "owner": "bolt-foundry",
+            "repo": "gambit",
+            "stars": 242
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Harness Kit",
+          "description": "Patterns and engineering practices for building with AI agents.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-15T19:26:48Z",
+            "owner": "deepklarity",
+            "repo": "harness-kit",
+            "stars": 88
+          }
+        }
+      ],
+      "title": "Agent Harness Frameworks"
+    },
+    {
+      "description": "The persistent infrastructure layer. Agent runtimes give coding agents long-running capabilities they lack natively: persistent memory, cron scheduling, multi-channel messaging, and sub-agent spawning. If orchestrators solve throughput and task runners solve issue-to-PR, runtimes solve \"how does an agent stay alive and connected between tasks.\"",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "OpenClaw",
+          "description": "AI agent runtime. Orchestrates agents across messaging channels with skill system, sub-agent spawning, and persistent session management.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T10:19:31Z",
+            "owner": "openclaw",
+            "repo": "openclaw",
+            "stars": 386142
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "LangGraph",
+          "description": "Library for building stateful, multi-actor applications with LLMs. Functions as an agent runtime managing execution, state, and coordination of agentic workflows. Built on LangChain.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T20:03:25Z",
+            "owner": "langchain-ai",
+            "repo": "langgraph",
+            "stars": 39607
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Nanoclaw",
+          "description": "Lightweight alternative to OpenClaw that runs in containers. Connects to WhatsApp, Telegram, and other channels with a security-first, container-based isolation model.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T09:04:36Z",
+            "owner": "nanocoai",
+            "repo": "nanoclaw",
+            "stars": 30502
+          }
+        }
+      ],
+      "title": "Agent Runtimes"
+    },
+    {
+      "description": "Agents that run across sessions need persistent memory and shared knowledge. These tools solve the \"context cliff\" problem — without them, every new session starts from zero.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "claude-mem",
+          "description": "Automatic session capture with AI compression and injection into future sessions. Solves the stateless-agent problem by giving Claude Code persistent memory across runs.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "JavaScript",
+            "last_commit": "2026-08-13T01:59:22Z",
+            "owner": "thedotmack",
+            "repo": "claude-mem",
+            "stars": 90602
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Hindsight",
+          "description": "Agent memory that learns. Automatically captures, indexes, and retrieves agent execution history to improve future task performance.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T09:32:07Z",
+            "owner": "vectorize-io",
+            "repo": "hindsight",
+            "stars": 19868
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "CodeBurn",
+          "description": "Claude Code token usage analytics. Breaks down token consumption by task, enabling cost attribution and optimization.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-12T19:50:43Z",
+            "owner": "getagentseal",
+            "repo": "codeburn",
+            "stars": 9290
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Honcho",
+          "description": "Agent state memory library. Provides the persistence layer for stateful agents — session history, user context, and learned preferences.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T03:40:45Z",
+            "owner": "plastic-labs",
+            "repo": "honcho",
+            "stars": 6624
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "cq",
+          "description": "Mozilla developer project enabling AI coding agents to share learned knowledge. A commons where agents deposit and retrieve solutions, avoiding redundant problem-solving. Has Claude Code and OpenCode plugins.",
+          "children": []
+        }
+      ],
+      "title": "Agent Knowledge & Memory"
+    },
+    {
+      "description": "The execution layer. In harness engineering, the agent is a commodity — the harness is the differentiator. These agents write code; everything above them determines whether that code is useful.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Hermes Agent",
+          "description": "Self-improving agent loop with persistent memory and self-generated skills. The agent that grows with you — learns from execution history and evolves its own capabilities over time.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T10:16:28Z",
+            "owner": "NousResearch",
+            "repo": "hermes-agent",
+            "stars": 229846
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "OpenCode",
+          "description": "Open-source coding agent with a plugin system (44 lifecycle hooks), server mode HTTP API, and TypeScript SDK. The most extensible harness integration point for custom workflows.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T09:55:15Z",
+            "owner": "anomalyco",
+            "repo": "opencode",
+            "stars": 196872
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Gemini CLI",
+          "description": "Google's CLI coding agent.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T01:19:22Z",
+            "owner": "google-gemini",
+            "repo": "gemini-cli",
+            "stars": 106497
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Codex",
+          "description": "OpenAI's coding agent. Cloud and CLI modes.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Rust",
+            "last_commit": "2026-08-13T09:02:46Z",
+            "owner": "openai",
+            "repo": "codex",
+            "stars": 105665
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Pi Mono",
+          "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods. Full-stack agent infrastructure in a single monorepo.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T10:08:57Z",
+            "owner": "earendil-works",
+            "repo": "pi",
+            "stars": 89144
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Aider",
+          "description": "AI pair programming in your terminal.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-05-22T14:02:20Z",
+            "owner": "Aider-AI",
+            "repo": "aider",
+            "stars": 48162
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "GitHub Copilot CLI",
+          "description": "GitHub's CLI coding agent.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Shell",
+            "last_commit": "2026-08-12T13:51:38Z",
+            "owner": "github",
+            "repo": "copilot-cli",
+            "stars": 11086
+          }
+        }
+      ],
+      "title": "Coding Agents"
+    },
+    {
+      "description": "The planning layer addresses the biggest harness gap: agents can write code, but someone has to decide what to build. \"Repository knowledge is the system of record\" — these tools generate the specs and requirements that agents consume.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Spec Kit",
+          "description": "GitHub's spec generation toolkit.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T22:55:14Z",
+            "owner": "github",
+            "repo": "spec-kit",
+            "stars": 126759
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Archon",
+          "description": "First open-source harness builder. Makes AI coding deterministic and repeatable through structured harness configuration.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T09:55:29Z",
+            "owner": "coleam00",
+            "repo": "Archon",
+            "stars": 23175
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Open Pencil",
+          "description": "Open-source AI-native design editor (MIT). 75+ tools and an MCP server let coding agents read/write .fig files headlessly.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T09:51:49Z",
+            "owner": "open-pencil",
+            "repo": "open-pencil",
+            "stars": 7731
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "OpenSpec",
+          "description": "Spec-driven development CLI. Generate structured specs from natural language.",
+          "children": []
+        }
+      ],
+      "title": "Requirements & Spec Tools"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "GitAgent",
+          "description": "Git-native, framework-agnostic standard for defining AI agents. Your repo is the agent: agent.yaml manifest + SOUL.md identity + RULES.md constraints.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-09T16:26:46Z",
+            "owner": "open-gitagent",
+            "repo": "gitagent",
+            "stars": 645
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "HXA-Connect",
+          "description": "B2B messaging hub for AI agents. WebSocket-based real-time communication with org-scoped authentication, collaboration threads, @mention routing, and reply-to threading. Enables multi-agent coordination across different harnesses.",
+          "children": []
+        }
+      ],
+      "title": "Standards & Protocols"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "Reference & Knowledge"
+    },
+    {
+      "description": "",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "harness-kit",
+          "description": "Engineering patterns for building with AI agents.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-07-15T19:26:48Z",
+            "owner": "deepklarity",
+            "repo": "harness-kit",
+            "stars": 88
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "agent-harness",
+          "description": "Principles, checklists, and invariants for AI coding workflows.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": null,
+            "last_commit": "2026-02-23T02:58:22Z",
+            "owner": "MattMagg",
+            "repo": "agent-harness",
+            "stars": 12
+          }
+        }
+      ],
+      "title": "Documentation Patterns"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-08-13T10:19:36.264Z",
+    "original_repository": "AutoJunjie/awesome-agent-harness",
+    "original_repository_sha": "1e3f26371ec1a765efe0268b1e63374bee2aaa04",
+    "enhanced_repository": "enhansome/enhansome-agent-harness",
+    "enhanced_repository_description": null,
+    "title": "Awesome Agent Harness with stars"
+  }
+}
