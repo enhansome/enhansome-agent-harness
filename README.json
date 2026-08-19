@@ -1,9 +1,40 @@
 {
   "items": [
     {
-      "description": "An agent harness is the infrastructure that wraps around an LLM coding agent. It's everything except the model itself: session management, context delivery, tool design, architectural enforcement, failure recovery, and human oversight.\nOpenAI's Harness Engineering blog defined the term: \"When a software engineering team's primary job is no longer to write code, but to design environments, specify intent, and build feedback loops that allow agents to do reliable work.\" Their team built 1M+ lines of production code with zero human-written lines using this approach.\nAnthropic's Claude Code team discovered the same principles from the tool design side: the harness matters more than the model. Fewer, more expressive tools beat a long menu of narrow ones. Progressive disclosure — letting the agent recursively discover context across layers — outperforms loading everything upfront. \"Designing an agent's action space is as much an art as it is a science.\"",
-      "items": [],
-      "title": "What is an Agent Harness?"
+      "description": "Tools that span from requirements to delivery with human-in-the-loop approval.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Paperclip",
+          "description": "Open-source orchestration for zero-human companies. Budget/cost tracking, company templates (ClipMart), and autonomous agent coordination. Pushes the \"agents execute\" principle to its extreme — designed for fully autonomous operation with no human in the loop.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1170821064,
+            "language": "TypeScript",
+            "last_commit": "2026-08-19T09:15:06Z",
+            "owner": "paperclipai",
+            "repo": "paperclip",
+            "stars": 78837
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Multica",
+          "description": "Open-source managed agents platform. \"Turn coding agents into real teammates\" — assign tasks, track progress, compound skills across sessions. Validates the core premise that agents need team-level management, not just individual harnesses.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "id": 1133707766,
+            "language": "Go",
+            "last_commit": "2026-08-19T09:31:22Z",
+            "owner": "multica-ai",
+            "repo": "multica",
+            "stars": 46776
+          }
+        }
+      ],
+      "title": "Full Lifecycle Platforms"
     },
     {
       "description": "Orchestrators solve the throughput problem: at high agent velocity, you need parallel execution with worktree isolation so agents don't step on each other. As OpenAI found, \"corrections are cheap, waiting is expensive\" — these tools maximize concurrent agent throughput.",
@@ -15,11 +46,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1136590548,
             "language": "JavaScript",
-            "last_commit": "2026-08-17T04:55:56Z",
+            "last_commit": "2026-08-18T20:07:38Z",
             "owner": "affaan-m",
             "repo": "ECC",
-            "stars": 240814
+            "stars": 241049
           }
         },
         {
@@ -29,11 +61,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1108837393,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:43:39Z",
+            "last_commit": "2026-08-19T09:34:57Z",
             "owner": "code-yeongyu",
             "repo": "oh-my-openagent",
-            "stars": 68021
+            "stars": 68067
           }
         },
         {
@@ -43,11 +76,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 384219990,
             "language": "Rust",
-            "last_commit": "2026-08-18T09:40:54Z",
+            "last_commit": "2026-08-19T09:40:47Z",
             "owner": "warpdotdev",
             "repo": "warp",
-            "stars": 64308
+            "stars": 64336
           }
         },
         {
@@ -57,11 +91,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1130809465,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:09:26Z",
+            "last_commit": "2026-08-18T12:34:36Z",
             "owner": "Yeachan-Heo",
             "repo": "oh-my-claudecode",
-            "stars": 38629
+            "stars": 38653
           }
         },
         {
@@ -71,11 +106,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1148052330,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:15:54Z",
+            "last_commit": "2026-08-19T09:27:11Z",
             "owner": "Yeachan-Heo",
             "repo": "oh-my-codex",
-            "stars": 32715
+            "stars": 32738
           }
         },
         {
@@ -85,11 +121,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1002125012,
             "language": "Rust",
             "last_commit": "2026-04-24T09:17:34Z",
             "owner": "BloopAI",
             "repo": "vibe-kanban",
-            "stars": 27838
+            "stars": 27846
           }
         },
         {
@@ -99,11 +136,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1117184424,
             "language": "Go",
-            "last_commit": "2026-08-13T01:48:44Z",
+            "last_commit": "2026-08-19T04:16:45Z",
             "owner": "gastownhall",
             "repo": "gastown",
-            "stars": 17653
+            "stars": 17668
           }
         },
         {
@@ -113,11 +151,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1142423471,
             "language": "TypeScript",
             "last_commit": "2026-08-17T06:26:47Z",
             "owner": "mindfold-ai",
             "repo": "Trellis",
-            "stars": 13999
+            "stars": 14029
           }
         },
         {
@@ -127,11 +166,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1156994049,
             "language": "Go",
-            "last_commit": "2026-08-18T09:38:27Z",
+            "last_commit": "2026-08-19T09:43:44Z",
             "owner": "Untrivial-ai",
             "repo": "agent-orchestrator",
-            "stars": 9603
+            "stars": 9630
           }
         },
         {
@@ -141,11 +181,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1046096502,
             "language": "TypeScript",
-            "last_commit": "2026-08-17T14:08:11Z",
+            "last_commit": "2026-08-18T12:13:05Z",
             "owner": "generalaction",
             "repo": "emdash",
-            "stars": 5430
+            "stars": 5440
           }
         },
         {
@@ -155,11 +196,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1177353643,
             "language": "Go",
-            "last_commit": "2026-08-18T03:06:28Z",
+            "last_commit": "2026-08-18T22:19:30Z",
             "owner": "GoogleCloudPlatform",
             "repo": "scion",
-            "stars": 1675
+            "stars": 1676
           }
         },
         {
@@ -169,11 +211,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1165663023,
             "language": "TypeScript",
             "last_commit": "2026-04-20T17:25:35Z",
             "owner": "hesamsheikh",
             "repo": "octogent",
-            "stars": 1402
+            "stars": 1403
           }
         },
         {
@@ -183,11 +226,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1145914675,
             "language": "TypeScript",
-            "last_commit": "2026-08-17T09:50:22Z",
+            "last_commit": "2026-08-18T13:14:04Z",
             "owner": "first-fluke",
             "repo": "oh-my-agent",
-            "stars": 1233
+            "stars": 1238
           }
         },
         {
@@ -197,18 +241,13 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1119736729,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T07:21:36Z",
+            "last_commit": "2026-08-19T07:24:39Z",
             "owner": "desplega-ai",
             "repo": "agent-swarm",
-            "stars": 705
+            "stars": 709
           }
-        },
-        {
-          "node_type": "item",
-          "title": "ruflo",
-          "description": "Claude agent orchestration with swarm mode. Coordinates multiple Claude Code agents for parallel task execution.",
-          "children": []
         }
       ],
       "title": "Agent Orchestrators"
@@ -223,11 +262,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1167965563,
             "language": "Elixir",
             "last_commit": "2026-08-12T18:19:49Z",
             "owner": "openai",
             "repo": "symphony",
-            "stars": 26732
+            "stars": 26752
           }
         },
         {
@@ -237,11 +277,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1129759677,
             "language": "TypeScript",
             "last_commit": "2026-02-02T01:46:21Z",
             "owner": "snarktank",
             "repo": "ralph",
-            "stars": 21523
+            "stars": 21531
           }
         },
         {
@@ -251,11 +292,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 954321799,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:27:13Z",
+            "last_commit": "2026-08-18T10:15:27Z",
             "owner": "truffle-ai",
             "repo": "dexto",
-            "stars": 646
+            "stars": 647
           }
         },
         {
@@ -265,8 +307,9 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1147022845,
             "language": "Go",
-            "last_commit": "2026-08-18T03:01:49Z",
+            "last_commit": "2026-08-19T03:01:40Z",
             "owner": "kelos-dev",
             "repo": "kelos",
             "stars": 293
@@ -279,6 +322,7 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1111801962,
             "language": "Python",
             "last_commit": "2026-01-28T19:40:43Z",
             "owner": "coleam00",
@@ -293,6 +337,7 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1173665115,
             "language": "Go",
             "last_commit": "2026-03-07T13:20:21Z",
             "owner": "shayne-snap",
@@ -313,11 +358,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 979115477,
             "language": "Python",
-            "last_commit": "2026-08-17T11:55:30Z",
+            "last_commit": "2026-08-18T15:14:17Z",
             "owner": "bytedance",
             "repo": "deer-flow",
-            "stars": 80230
+            "stars": 80294
           }
         },
         {
@@ -327,11 +373,12 @@
           "children": [],
           "repo_info": {
             "archived": true,
+            "id": 1116260703,
             "language": "JavaScript",
             "last_commit": "2026-05-31T17:46:54Z",
             "owner": "gsd-build",
             "repo": "get-shit-done",
-            "stars": 64682
+            "stars": 64675
           }
         },
         {
@@ -341,11 +388,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1027384981,
             "language": "Python",
-            "last_commit": "2026-08-18T05:18:44Z",
+            "last_commit": "2026-08-19T08:10:18Z",
             "owner": "langchain-ai",
             "repo": "deepagents",
-            "stars": 27885
+            "stars": 27923
           }
         },
         {
@@ -355,11 +403,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1073224021,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:43:39Z",
+            "last_commit": "2026-08-19T09:14:02Z",
             "owner": "EveryInc",
             "repo": "compound-engineering-plugin",
-            "stars": 24347
+            "stars": 24369
           }
         },
         {
@@ -369,11 +418,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1135791677,
             "language": "Python",
             "last_commit": "2026-08-17T07:00:33Z",
             "owner": "lsdefine",
             "repo": "GenericAgent",
-            "stars": 13791
+            "stars": 13797
           }
         },
         {
@@ -383,11 +433,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 974445592,
             "language": "Python",
-            "last_commit": "2026-08-18T09:39:31Z",
+            "last_commit": "2026-08-19T09:43:31Z",
             "owner": "microsoft",
             "repo": "agent-framework",
-            "stars": 12864
+            "stars": 12910
           }
         },
         {
@@ -397,11 +448,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1132431999,
             "language": "Python",
-            "last_commit": "2026-08-13T01:52:10Z",
+            "last_commit": "2026-08-19T02:51:00Z",
             "owner": "aden-hive",
             "repo": "hive",
-            "stars": 10923
+            "stars": 10925
           }
         },
         {
@@ -411,11 +463,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1147063571,
             "language": "JavaScript",
             "last_commit": "2026-08-17T07:49:03Z",
             "owner": "EvoMap",
             "repo": "evolver",
-            "stars": 8978
+            "stars": 8982
           }
         },
         {
@@ -425,11 +478,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1155594962,
             "language": "Python",
             "last_commit": "2026-05-13T20:17:05Z",
             "owner": "peteromallet",
             "repo": "desloppify",
-            "stars": 3023
+            "stars": 3022
           }
         },
         {
@@ -439,8 +493,9 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1147789463,
             "language": "JavaScript",
-            "last_commit": "2026-08-17T19:24:48Z",
+            "last_commit": "2026-08-18T15:36:10Z",
             "owner": "zylos-ai",
             "repo": "zylos-core",
             "stars": 1147
@@ -453,6 +508,7 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1123850399,
             "language": "Rust",
             "last_commit": "2026-08-15T19:42:57Z",
             "owner": "neiii",
@@ -467,6 +523,7 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1101529500,
             "language": "TypeScript",
             "last_commit": "2026-05-15T16:11:52Z",
             "owner": "bolt-foundry",
@@ -481,6 +538,7 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1170070323,
             "language": "Python",
             "last_commit": "2026-07-15T19:26:48Z",
             "owner": "deepklarity",
@@ -501,11 +559,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1103012935,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:43:52Z",
+            "last_commit": "2026-08-19T09:44:33Z",
             "owner": "openclaw",
             "repo": "openclaw",
-            "stars": 386619
+            "stars": 386748
           }
         },
         {
@@ -515,11 +574,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 676672661,
             "language": "Python",
-            "last_commit": "2026-08-16T00:22:02Z",
+            "last_commit": "2026-08-19T00:23:46Z",
             "owner": "langchain-ai",
             "repo": "langgraph",
-            "stars": 39919
+            "stars": 40002
           }
         },
         {
@@ -529,11 +589,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1146738089,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:38:09Z",
+            "last_commit": "2026-08-19T09:37:44Z",
             "owner": "nanocoai",
             "repo": "nanoclaw",
-            "stars": 30539
+            "stars": 30547
           }
         }
       ],
@@ -549,11 +610,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1048065319,
             "language": "JavaScript",
-            "last_commit": "2026-08-17T15:46:17Z",
+            "last_commit": "2026-08-19T09:31:55Z",
             "owner": "thedotmack",
             "repo": "claude-mem",
-            "stars": 91052
+            "stars": 91206
           }
         },
         {
@@ -563,11 +625,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1086419061,
             "language": "Python",
-            "last_commit": "2026-08-18T09:45:02Z",
+            "last_commit": "2026-08-19T09:41:19Z",
             "owner": "vectorize-io",
             "repo": "hindsight",
-            "stars": 20136
+            "stars": 20240
           }
         },
         {
@@ -577,11 +640,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1209889782,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:44:47Z",
+            "last_commit": "2026-08-18T19:49:23Z",
             "owner": "getagentseal",
             "repo": "codeburn",
-            "stars": 9496
+            "stars": 9527
           }
         },
         {
@@ -591,18 +655,13 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 689777286,
             "language": "Python",
-            "last_commit": "2026-08-17T22:15:01Z",
+            "last_commit": "2026-08-18T18:47:10Z",
             "owner": "plastic-labs",
             "repo": "honcho",
-            "stars": 6690
+            "stars": 6721
           }
-        },
-        {
-          "node_type": "item",
-          "title": "cq",
-          "description": "Mozilla developer project enabling AI coding agents to share learned knowledge. A commons where agents deposit and retrieve solutions, avoiding redundant problem-solving. Has Claude Code and OpenCode plugins.",
-          "children": []
         }
       ],
       "title": "Agent Knowledge & Memory"
@@ -617,11 +676,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1024554267,
             "language": "Python",
-            "last_commit": "2026-08-18T09:33:59Z",
+            "last_commit": "2026-08-19T09:45:18Z",
             "owner": "NousResearch",
             "repo": "hermes-agent",
-            "stars": 232271
+            "stars": 232765
           }
         },
         {
@@ -631,11 +691,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 975734319,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:30:47Z",
+            "last_commit": "2026-08-19T07:52:23Z",
             "owner": "anomalyco",
             "repo": "opencode",
-            "stars": 198649
+            "stars": 199008
           }
         },
         {
@@ -645,11 +706,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 965415649,
             "language": "Rust",
-            "last_commit": "2026-08-18T09:40:48Z",
+            "last_commit": "2026-08-19T09:08:08Z",
             "owner": "openai",
             "repo": "codex",
-            "stars": 106593
+            "stars": 106781
           }
         },
         {
@@ -659,11 +721,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 968197216,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T02:01:01Z",
+            "last_commit": "2026-08-19T01:07:23Z",
             "owner": "google-gemini",
             "repo": "gemini-cli",
-            "stars": 106548
+            "stars": 106565
           }
         },
         {
@@ -673,11 +736,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1035029907,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:05:33Z",
+            "last_commit": "2026-08-19T09:30:27Z",
             "owner": "earendil-works",
             "repo": "pi",
-            "stars": 92787
+            "stars": 93537
           }
         },
         {
@@ -687,11 +751,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 638629097,
             "language": "Python",
             "last_commit": "2026-05-22T14:02:20Z",
             "owner": "Aider-AI",
             "repo": "aider",
-            "stars": 48300
+            "stars": 48323
           }
         },
         {
@@ -701,8 +766,9 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 585860664,
             "language": "Shell",
-            "last_commit": "2026-08-14T23:47:00Z",
+            "last_commit": "2026-08-19T08:46:57Z",
             "owner": "github",
             "repo": "copilot-cli",
             "stars": 11100
@@ -721,11 +787,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1042367133,
             "language": "Python",
-            "last_commit": "2026-08-17T23:32:16Z",
+            "last_commit": "2026-08-18T19:24:18Z",
             "owner": "github",
             "repo": "spec-kit",
-            "stars": 129962
+            "stars": 130227
           }
         },
         {
@@ -735,11 +802,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 929121414,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T09:24:19Z",
+            "last_commit": "2026-08-19T09:29:26Z",
             "owner": "coleam00",
             "repo": "Archon",
-            "stars": 23221
+            "stars": 23225
           }
         },
         {
@@ -749,24 +817,19 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1168481509,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T08:52:24Z",
+            "last_commit": "2026-08-19T09:33:37Z",
             "owner": "open-pencil",
             "repo": "open-pencil",
-            "stars": 7844
+            "stars": 7867
           }
-        },
-        {
-          "node_type": "item",
-          "title": "OpenSpec",
-          "description": "Spec-driven development CLI. Generate structured specs from natural language.",
-          "children": []
         }
       ],
       "title": "Requirements & Spec Tools"
     },
     {
-      "description": "",
+      "description": null,
       "items": [
         {
           "node_type": "item",
@@ -775,64 +838,63 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1172540122,
             "language": "TypeScript",
             "last_commit": "2026-08-09T16:26:46Z",
             "owner": "open-gitagent",
             "repo": "gitagent",
             "stars": 652
           }
-        },
-        {
-          "node_type": "item",
-          "title": "HXA-Connect",
-          "description": "B2B messaging hub for AI agents. WebSocket-based real-time communication with org-scoped authentication, collaboration threads, @mention routing, and reply-to threading. Enables multi-agent coordination across different harnesses.",
-          "children": []
         }
       ],
       "title": "Standards & Protocols"
     },
     {
-      "description": "",
-      "items": [],
-      "title": "Reference & Knowledge"
-    },
-    {
-      "description": "",
+      "description": null,
       "items": [
         {
-          "node_type": "item",
-          "title": "harness-kit",
-          "description": "Engineering patterns for building with AI agents.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "language": "Python",
-            "last_commit": "2026-07-15T19:26:48Z",
-            "owner": "deepklarity",
-            "repo": "harness-kit",
-            "stars": 90
-          }
-        },
-        {
-          "node_type": "item",
-          "title": "agent-harness",
-          "description": "Principles, checklists, and invariants for AI coding workflows.",
-          "children": [],
-          "repo_info": {
-            "archived": false,
-            "language": null,
-            "last_commit": "2026-02-23T02:58:22Z",
-            "owner": "MattMagg",
-            "repo": "agent-harness",
-            "stars": 12
-          }
+          "children": [
+            {
+              "node_type": "item",
+              "title": "harness-kit",
+              "description": "Engineering patterns for building with AI agents.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1170070323,
+                "language": "Python",
+                "last_commit": "2026-07-15T19:26:48Z",
+                "owner": "deepklarity",
+                "repo": "harness-kit",
+                "stars": 90
+              }
+            },
+            {
+              "node_type": "item",
+              "title": "agent-harness",
+              "description": "Principles, checklists, and invariants for AI coding workflows.",
+              "children": [],
+              "repo_info": {
+                "archived": false,
+                "id": 1164385452,
+                "language": null,
+                "last_commit": "2026-02-23T02:58:22Z",
+                "owner": "MattMagg",
+                "repo": "agent-harness",
+                "stars": 12
+              }
+            }
+          ],
+          "description": null,
+          "node_type": "group",
+          "title": "Documentation Patterns"
         }
       ],
-      "title": "Documentation Patterns"
+      "title": "Reference & Knowledge"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-18T09:45:05.744Z",
+    "last_updated": "2026-08-19T09:45:23.528Z",
     "original_repository": "AutoJunjie/awesome-agent-harness",
     "original_repository_sha": "1e3f26371ec1a765efe0268b1e63374bee2aaa04",
     "enhanced_repository": "enhansome/enhansome-agent-harness",
