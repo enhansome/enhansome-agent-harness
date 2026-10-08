@@ -44,12 +44,12 @@ From the two seminal references above:
 
 Tools that span from requirements to delivery with human-in-the-loop approval.
 
-* [Chorus](https://github.com/Chorus-AIDLC/Chorus) ⭐ 1,192 | 🐛 18 | 🌐 TypeScript | 📅 2026-10-07 — Agent harness for requirements-to-delivery. Task DAGs, sub-agent orchestration (Agent Teams), proof of work, human approval gates. AI proposes, humans verify.
+* [Chorus](https://github.com/Chorus-AIDLC/Chorus) ⭐ 1,191 | 🐛 20 | 🌐 TypeScript | 📅 2026-10-07 — Agent harness for requirements-to-delivery. Task DAGs, sub-agent orchestration (Agent Teams), proof of work, human approval gates. AI proposes, humans verify.
 
 <p align="center"><video src="https://github.com/AutoJunjie/awesome-agent-harness/edit/main/demo.mp4" controls></video></p>
 
-* [Paperclip](https://github.com/paperclipai/paperclip) ⭐ 98,330 | 🐛 6,212 | 🌐 TypeScript | 📅 2026-10-07 — Open-source orchestration for zero-human companies. Budget/cost tracking, company templates (ClipMart), and autonomous agent coordination. Pushes the "agents execute" principle to its extreme — designed for fully autonomous operation with no human in the loop.
-* [Multica](https://github.com/multica-ai/multica) ⭐ 52,094 | 🐛 1,818 | 🌐 Go | 📅 2026-10-07 — Open-source managed agents platform. "Turn coding agents into real teammates" — assign tasks, track progress, compound skills across sessions. Validates the core premise that agents need team-level management, not just individual harnesses.
+* [Paperclip](https://github.com/paperclipai/paperclip) ⭐ 98,744 | 🐛 6,209 | 🌐 TypeScript | 📅 2026-10-08 — Open-source orchestration for zero-human companies. Budget/cost tracking, company templates (ClipMart), and autonomous agent coordination. Pushes the "agents execute" principle to its extreme — designed for fully autonomous operation with no human in the loop.
+* [Multica](https://github.com/multica-ai/multica) ⭐ 52,196 | 🐛 1,837 | 🌐 Go | 📅 2026-10-08 — Open-source managed agents platform. "Turn coding agents into real teammates" — assign tasks, track progress, compound skills across sessions. Validates the core premise that agents need team-level management, not just individual harnesses.
 * [GitHub Agentic Workflows](https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/) — GitHub Actions with coding agent engines (Copilot, Claude Code, Codex). Issue → agent → PR with sandboxing and permissions.
 * [Almirant](https://almirant.ai/?utm_source=awesome-agent-harness\&utm_medium=awesome-list\&utm_campaign=march-2026) — Operating system for human-agent teams. Persistent context across sessions, shared memory between agents, structured task lifecycle (plan → implement → review → deploy), and human approval gates. Designed for teams where humans and agents work together continuously — not just one-shot task execution.
 
@@ -57,30 +57,30 @@ Tools that span from requirements to delivery with human-in-the-loop approval.
 
 Orchestrators solve the throughput problem: at high agent velocity, you need parallel execution with worktree isolation so agents don't step on each other. As OpenAI found, "corrections are cheap, waiting is expensive" — these tools maximize concurrent agent throughput.
 
-* [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) ⭐ 274,709 | 🐛 368 | 🌐 JavaScript | 📅 2026-10-05 — Skills, instincts, memory, and security harness for Claude Code and Codex.
-* [Oh My OpenCode](https://github.com/code-yeongyu/oh-my-opencode) ⭐ 69,867 | 🐛 1,163 | 🌐 TypeScript | 📅 2026-10-07 — Performance optimization harness for OpenCode with 44 lifecycle hooks.
-* [Warp](https://github.com/warpdotdev/Warp) ⭐ 65,392 | 🐛 5,364 | 🌐 Rust | 📅 2026-10-07 — Agentic development environment built for coding with multiple AI agents.
-* [Oh My Claude Code](https://github.com/Yeachan-Heo/oh-my-claudecode) ⭐ 39,649 | 🐛 3 | 🌐 TypeScript | 📅 2026-10-07 — Teams-first multi-agent orchestration for Claude Code. Ultrapilot mode runs 5 Claude Code instances in parallel Git worktrees, compressing 4-hour tasks to 50 minutes.
-* [Oh My Codex](https://github.com/Yeachan-Heo/oh-my-codex) ⭐ 33,476 | 🐛 2 | 🌐 TypeScript | 📅 2026-10-06 — Hooks, agent teams, and HUD for Codex. Adds lifecycle hooks and multi-agent coordination on top of OpenAI's CLI agent.
-* [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) ⭐ 28,278 | 🐛 544 | 🌐 Rust | 📅 2026-09-19 — Kanban-based orchestrator with git worktree isolation per agent. Supports 10+ coding agents. Enforces the "one agent, one worktree" pattern that keeps parallel execution clean.
-* [Gas Town](https://github.com/gastownhall/gastown) ⭐ 18,295 | 🐛 505 | 🌐 Go | 📅 2026-09-29 — Steve Yegge's multi-agent workspace manager. Docker-based with a "Mayor" orchestrator that distributes work as "beads" across agent "convoys." Includes web dashboard, git worktree isolation, and hook-based work state management.
-* [Trellis](https://github.com/mindfold-ai/trellis) ⭐ 14,880 | 🐛 80 | 🌐 TypeScript | 📅 2026-09-29 — Git worktree-based multi-agent parallel harness. Isolates agents into separate worktrees for clean concurrent execution.
-* [Composio Agent Orchestrator](https://github.com/ComposioHQ/agent-orchestrator) ⭐ 12,864 | 🐛 773 | 🌐 Go | 📅 2026-10-07 — Agentic orchestrator for parallel coding agents. Plans tasks, spawns agents in isolated worktrees, autonomously handles CI fixes, merge conflicts, and code reviews.
-* [Emdash](https://github.com/generalaction/emdash) ⭐ 5,927 | 🐛 92 | 🌐 TypeScript | 📅 2026-10-07 — Open-source Agentic Development Environment (YC W26). Runs parallel agents in isolated worktrees, locally or over SSH — making the "corrections are cheap" principle practical for remote teams.
-* [Scion](https://github.com/GoogleCloudPlatform/scion) ⭐ 1,732 | 🐛 62 | 🌐 Go | 📅 2026-10-07 — Google's open-source multi-agent orchestration testbed. Manages "deep agents" (Claude Code, Gemini CLI, Codex) as isolated, concurrent processes — each gets its own container, git worktree, and credentials. Agent memory, chatrooms, and task management as orthogonal, pluggable modules.
-* [Octogent](https://github.com/hesamsheikh/octogent) ⭐ 1,418 | 🐛 24 | 🌐 TypeScript | 📅 2026-04-20 — Claude Code multi-agent orchestration dashboard. Humans control worker agents directly from the orchestration layer with real-time visibility into parallel execution.
-* [Oh My AG](https://github.com/first-fluke/oh-my-ag) ⭐ 1,338 | 🐛 0 | 🌐 TypeScript | 📅 2026-10-07 — Multi-agent harness for Google Antigravity with 6 specialized agents.
-* [Desplega Agent Swarm](https://github.com/desplega-ai/agent-swarm) ⭐ 863 | 🐛 28 | 🌐 TypeScript | 📅 2026-10-07 — Open-source multi-agent orchestration framework. Coordinates specialized AI agents (Claude Code-powered) through task delegation, session continuity, shared memory, and service discovery. Features include epics, scheduling, Slack integration, and cross-agent communication channels.
+* [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) ⭐ 275,345 | 🐛 312 | 🌐 JavaScript | 📅 2026-10-05 — Skills, instincts, memory, and security harness for Claude Code and Codex.
+* [Oh My OpenCode](https://github.com/code-yeongyu/oh-my-opencode) ⭐ 69,893 | 🐛 1,174 | 🌐 TypeScript | 📅 2026-10-08 — Performance optimization harness for OpenCode with 44 lifecycle hooks.
+* [Warp](https://github.com/warpdotdev/Warp) ⭐ 65,396 | 🐛 5,365 | 🌐 Rust | 📅 2026-10-08 — Agentic development environment built for coding with multiple AI agents.
+* [Oh My Claude Code](https://github.com/Yeachan-Heo/oh-my-claudecode) ⭐ 39,689 | 🐛 8 | 🌐 TypeScript | 📅 2026-10-08 — Teams-first multi-agent orchestration for Claude Code. Ultrapilot mode runs 5 Claude Code instances in parallel Git worktrees, compressing 4-hour tasks to 50 minutes.
+* [Oh My Codex](https://github.com/Yeachan-Heo/oh-my-codex) ⭐ 33,487 | 🐛 2 | 🌐 TypeScript | 📅 2026-10-08 — Hooks, agent teams, and HUD for Codex. Adds lifecycle hooks and multi-agent coordination on top of OpenAI's CLI agent.
+* [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) ⭐ 28,294 | 🐛 544 | 🌐 Rust | 📅 2026-09-19 — Kanban-based orchestrator with git worktree isolation per agent. Supports 10+ coding agents. Enforces the "one agent, one worktree" pattern that keeps parallel execution clean.
+* [Gas Town](https://github.com/gastownhall/gastown) ⭐ 18,306 | 🐛 507 | 🌐 Go | 📅 2026-10-08 — Steve Yegge's multi-agent workspace manager. Docker-based with a "Mayor" orchestrator that distributes work as "beads" across agent "convoys." Includes web dashboard, git worktree isolation, and hook-based work state management.
+* [Trellis](https://github.com/mindfold-ai/trellis) ⭐ 14,890 | 🐛 80 | 🌐 TypeScript | 📅 2026-09-29 — Git worktree-based multi-agent parallel harness. Isolates agents into separate worktrees for clean concurrent execution.
+* [Composio Agent Orchestrator](https://github.com/ComposioHQ/agent-orchestrator) ⭐ 12,913 | 🐛 788 | 🌐 Go | 📅 2026-10-08 — Agentic orchestrator for parallel coding agents. Plans tasks, spawns agents in isolated worktrees, autonomously handles CI fixes, merge conflicts, and code reviews.
+* [Emdash](https://github.com/generalaction/emdash) ⭐ 5,938 | 🐛 96 | 🌐 TypeScript | 📅 2026-10-08 — Open-source Agentic Development Environment (YC W26). Runs parallel agents in isolated worktrees, locally or over SSH — making the "corrections are cheap" principle practical for remote teams.
+* [Scion](https://github.com/GoogleCloudPlatform/scion) ⭐ 1,733 | 🐛 66 | 🌐 Go | 📅 2026-10-08 — Google's open-source multi-agent orchestration testbed. Manages "deep agents" (Claude Code, Gemini CLI, Codex) as isolated, concurrent processes — each gets its own container, git worktree, and credentials. Agent memory, chatrooms, and task management as orthogonal, pluggable modules.
+* [Octogent](https://github.com/hesamsheikh/octogent) ⭐ 1,419 | 🐛 24 | 🌐 TypeScript | 📅 2026-04-20 — Claude Code multi-agent orchestration dashboard. Humans control worker agents directly from the orchestration layer with real-time visibility into parallel execution.
+* [Oh My AG](https://github.com/first-fluke/oh-my-ag) ⭐ 1,337 | 🐛 0 | 🌐 TypeScript | 📅 2026-10-08 — Multi-agent harness for Google Antigravity with 6 specialized agents.
+* [Desplega Agent Swarm](https://github.com/desplega-ai/agent-swarm) ⭐ 870 | 🐛 17 | 🌐 TypeScript | 📅 2026-10-08 — Open-source multi-agent orchestration framework. Coordinates specialized AI agents (Claude Code-powered) through task delegation, session continuity, shared memory, and service discovery. Features include epics, scheduling, Slack integration, and cross-agent communication channels.
 * [ruflo](https://github.com/ruflo-ai/ruflo) — Claude agent orchestration with swarm mode. Coordinates multiple Claude Code agents for parallel task execution.
 
 ## Task Runners
 
 Task runners bridge the gap between issue trackers and coding agents. They embody the "humans steer, agents execute" principle: a human (or PM agent) creates the issue, the runner spawns an agent, and the output is a PR ready for review.
 
-* [Symphony](https://github.com/openai/symphony) ⭐ 27,585 | 🐛 8 | 🌐 Elixir | 📅 2026-09-15 — OpenAI's reference implementation of harness engineering. A daemon that polls Linear issues, spawns isolated Codex agents per task, and delivers PRs. Embodies "humans steer, agents execute" at scale.
-* [ralph](https://github.com/snarktank/ralph) ⭐ 21,921 | 🐛 75 | 🌐 TypeScript | 📅 2026-02-02 — PRD-driven autonomous agent loop. Runs until all PRD items are completed, bridging spec-to-execution for single-agent workflows.
-* [Dexto](https://github.com/truffle-ai/dexto) ⭐ 649 | 🐛 74 | 🌐 TypeScript | 📅 2026-09-30 — Coding agent and general agent harness for building agentic applications.
-* [Axon](https://github.com/axon-core/axon) ⭐ 336 | 🐛 160 | 🌐 Go | 📅 2026-10-07 — Kubernetes-native framework. Apply a Task CRD, get back a PR and cost in USD. TaskSpawner watches GitHub Issues.
+* [Symphony](https://github.com/openai/symphony) ⭐ 27,602 | 🐛 8 | 🌐 Elixir | 📅 2026-09-15 — OpenAI's reference implementation of harness engineering. A daemon that polls Linear issues, spawns isolated Codex agents per task, and delivers PRs. Embodies "humans steer, agents execute" at scale.
+* [ralph](https://github.com/snarktank/ralph) ⭐ 21,932 | 🐛 75 | 🌐 TypeScript | 📅 2026-02-02 — PRD-driven autonomous agent loop. Runs until all PRD items are completed, bridging spec-to-execution for single-agent workflows.
+* [Dexto](https://github.com/truffle-ai/dexto) ⭐ 649 | 🐛 76 | 🌐 TypeScript | 📅 2026-10-08 — Coding agent and general agent harness for building agentic applications.
+* [Axon](https://github.com/axon-core/axon) ⭐ 336 | 🐛 163 | 🌐 Go | 📅 2026-10-08 — Kubernetes-native framework. Apply a Task CRD, get back a PR and cost in USD. TaskSpawner watches GitHub Issues.
 * [Linear Coding Agent Harness](https://github.com/coleam00/Linear-Coding-Agent-Harness) ⭐ 231 | 🐛 3 | 🌐 Python | 📅 2026-01-28 — Linear → autonomous coding agent → PR pipeline.
 * [Baton](https://github.com/shayne-snap/baton) ⭐ 10 | 🐛 6 | 🌐 Go | 📅 2026-03-07 — Go implementation of Symphony. Polls Linear for claimable issues, spawns isolated Codex workspaces per issue, streams workflow prompts, and cleans up on completion.
 * [GitHub Copilot Coding Agent](https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-coding-agent/) — Built-in GitHub issue → Copilot agent → PR.
@@ -90,16 +90,16 @@ Task runners bridge the gap between issue trackers and coding agents. They embod
 
 Frameworks for building custom harnesses. Following the principle that "fewer tools, more expressiveness" beats sprawling toolkits, these provide composable primitives rather than opinionated workflows.
 
-* [DeerFlow 2.0](https://github.com/bytedance/deer-flow) ⭐ 83,467 | 🐛 908 | 🌐 Python | 📅 2026-10-07 — ByteDance's open-source SuperAgent harness. Skill system with on-demand loading, sub-agent orchestration, sandboxed execution, and persistent memory. Built on LangGraph/LangChain.
+* [DeerFlow 2.0](https://github.com/bytedance/deer-flow) ⭐ 83,522 | 🐛 896 | 🌐 Python | 📅 2026-10-08 — ByteDance's open-source SuperAgent harness. Skill system with on-demand loading, sub-agent orchestration, sandboxed execution, and persistent memory. Built on LangGraph/LangChain.
 * [get-shit-done](https://github.com/gsd-build/get-shit-done) ⚠️ Archived — Meta-prompting and context engineering system for Claude Code. Structures work as milestone→phase→plan with progressive context delivery.
-* [Deep Agents](https://github.com/langchain-ai/deepagents) ⭐ 29,992 | 🐛 186 | 🌐 Python | 📅 2026-10-07 — Agent harness built on LangChain/LangGraph. Implements progressive disclosure through planning tools and subagent spawning — agents discover context layer by layer rather than loading everything upfront.
-* [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin) ⭐ 25,420 | 🐛 119 | 🌐 TypeScript | 📅 2026-10-07 — Cross-agent standardized plugin for Claude Code, Codex, and Cursor. Unified harness interface across multiple coding agents.
-* [GenericAgent](https://github.com/lsdefine/GenericAgent) ⭐ 14,283 | 🐛 182 | 🌐 Python | 📅 2026-09-30 — Self-evolving agent framework. Grows a skill tree from 3.3K lines of seed code, achieving 6x token efficiency reduction through learned capabilities.
-* [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) ⭐ 13,989 | 🐛 765 | 🌐 Python | 📅 2026-10-07 — Microsoft's framework for building, orchestrating, and deploying AI agents and multi-agent workflows. Supports Python and .NET with structured orchestration patterns.
-* [Hive](https://github.com/aden-hive/hive) ⭐ 11,088 | 🐛 1,359 | 🌐 Python | 📅 2026-10-07 — Outcome-driven agent framework. Queen agent generates agent graphs, harness manages state, checkpoints, and cost tracking.
-* [EvoMap Evolver](https://github.com/EvoMap/evolver) ⭐ 9,134 | 🐛 31 | 🌐 JavaScript | 📅 2026-09-30 — Genome Evolution Protocol (GEP) engine for agent self-evolution. Applies evolutionary algorithms to optimize agent behavior and harness configuration over time.
-* [Desloppify](https://github.com/peteromallet/desloppify) ⭐ 3,165 | 🐛 192 | 🌐 Python | 📅 2026-05-13 — Agent harness focused on making AI-generated code well-engineered.
-* [Zylos](https://github.com/zylos-ai/zylos-core) ⭐ 1,157 | 🐛 161 | 🌐 JavaScript | 📅 2026-10-06 — Persistent agent harness for Claude Code. Tiered memory system, skill-based progressive disclosure, multi-channel communication bridge, task scheduler, and activity monitor — enabling autonomous, long-running agents that remember across sessions.
+* [Deep Agents](https://github.com/langchain-ai/deepagents) ⭐ 30,029 | 🐛 199 | 🌐 Python | 📅 2026-10-08 — Agent harness built on LangChain/LangGraph. Implements progressive disclosure through planning tools and subagent spawning — agents discover context layer by layer rather than loading everything upfront.
+* [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin) ⭐ 25,431 | 🐛 121 | 🌐 TypeScript | 📅 2026-10-08 — Cross-agent standardized plugin for Claude Code, Codex, and Cursor. Unified harness interface across multiple coding agents.
+* [GenericAgent](https://github.com/lsdefine/GenericAgent) ⭐ 14,287 | 🐛 183 | 🌐 Python | 📅 2026-09-30 — Self-evolving agent framework. Grows a skill tree from 3.3K lines of seed code, achieving 6x token efficiency reduction through learned capabilities.
+* [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) ⭐ 14,015 | 🐛 776 | 🌐 Python | 📅 2026-10-08 — Microsoft's framework for building, orchestrating, and deploying AI agents and multi-agent workflows. Supports Python and .NET with structured orchestration patterns.
+* [Hive](https://github.com/aden-hive/hive) ⭐ 11,086 | 🐛 1,357 | 🌐 Python | 📅 2026-10-07 — Outcome-driven agent framework. Queen agent generates agent graphs, harness manages state, checkpoints, and cost tracking.
+* [EvoMap Evolver](https://github.com/EvoMap/evolver) ⭐ 9,138 | 🐛 31 | 🌐 JavaScript | 📅 2026-09-30 — Genome Evolution Protocol (GEP) engine for agent self-evolution. Applies evolutionary algorithms to optimize agent behavior and harness configuration over time.
+* [Desloppify](https://github.com/peteromallet/desloppify) ⭐ 3,168 | 🐛 196 | 🌐 Python | 📅 2026-05-13 — Agent harness focused on making AI-generated code well-engineered.
+* [Zylos](https://github.com/zylos-ai/zylos-core) ⭐ 1,158 | 🐛 161 | 🌐 JavaScript | 📅 2026-10-08 — Persistent agent harness for Claude Code. Tiered memory system, skill-based progressive disclosure, multi-channel communication bridge, task scheduler, and activity monitor — enabling autonomous, long-running agents that remember across sessions.
 * [Bridle](https://github.com/neiii/bridle) ⭐ 440 | 🐛 20 | 🌐 Rust | 📅 2026-08-15 — TUI/CLI config manager for agent harnesses (Amp, Claude Code, OpenCode, Goose, Copilot CLI, Droid).
 * [Gambit](https://github.com/bolt-foundry/gambit) ⭐ 242 | 🐛 0 | 🌐 TypeScript | 📅 2026-05-15 — Framework for building, running, and verifying LLM workflows.
 * [Harness Kit](https://github.com/deepklarity/harness-kit) ⭐ 100 | 🐛 1 | 🌐 Python | 📅 2026-07-15 — Patterns and engineering practices for building with AI agents.
@@ -109,32 +109,32 @@ Frameworks for building custom harnesses. Following the principle that "fewer to
 
 The persistent infrastructure layer. Agent runtimes give coding agents long-running capabilities they lack natively: persistent memory, cron scheduling, multi-channel messaging, and sub-agent spawning. If orchestrators solve throughput and task runners solve issue-to-PR, runtimes solve "how does an agent stay alive and connected between tasks."
 
-* [OpenClaw](https://github.com/openclaw/openclaw) ⭐ 391,578 | 🐛 9,442 | 🌐 TypeScript | 📅 2026-10-07 — AI agent runtime. Orchestrates agents across messaging channels with skill system, sub-agent spawning, and persistent session management.
-* [LangGraph](https://github.com/langchain-ai/langgraph) ⭐ 42,827 | 🐛 793 | 🌐 Python | 📅 2026-10-07 — Library for building stateful, multi-actor applications with LLMs. Functions as an agent runtime managing execution, state, and coordination of agentic workflows. Built on LangChain.
-* [Nanoclaw](https://github.com/qwibitai/nanoclaw) ⭐ 30,890 | 🐛 1,039 | 🌐 TypeScript | 📅 2026-10-06 — Lightweight alternative to OpenClaw that runs in containers. Connects to WhatsApp, Telegram, and other channels with a security-first, container-based isolation model.
+* [OpenClaw](https://github.com/openclaw/openclaw) ⭐ 391,626 | 🐛 9,560 | 🌐 TypeScript | 📅 2026-10-08 — AI agent runtime. Orchestrates agents across messaging channels with skill system, sub-agent spawning, and persistent session management.
+* [LangGraph](https://github.com/langchain-ai/langgraph) ⭐ 42,893 | 🐛 800 | 🌐 Python | 📅 2026-10-08 — Library for building stateful, multi-actor applications with LLMs. Functions as an agent runtime managing execution, state, and coordination of agentic workflows. Built on LangChain.
+* [Nanoclaw](https://github.com/qwibitai/nanoclaw) ⭐ 30,898 | 🐛 1,040 | 🌐 TypeScript | 📅 2026-10-06 — Lightweight alternative to OpenClaw that runs in containers. Connects to WhatsApp, Telegram, and other channels with a security-first, container-based isolation model.
 * [Claude Managed Agents](https://www.anthropic.com/engineering/managed-agents) — Anthropic's managed agent infrastructure. Pre-built, configurable agent harness running on managed infra — you define agent templates (tools, skills, repos), Anthropic provides the harness and execution environment. Decouples "brain" (Claude + harness) from "hands" (sandboxes + tools) and "session" (event log). Designed for long-horizon tasks as Claude's task horizon grows exponentially.
 
 ## Agent Knowledge & Memory
 
 Agents that run across sessions need persistent memory and shared knowledge. These tools solve the "context cliff" problem — without them, every new session starts from zero.
 
-* [claude-mem](https://github.com/thedotmack/claude-mem) ⭐ 97,525 | 🐛 112 | 🌐 TypeScript | 📅 2026-10-07 — Automatic session capture with AI compression and injection into future sessions. Solves the stateless-agent problem by giving Claude Code persistent memory across runs.
-* [Hindsight](https://github.com/vectorize-io/hindsight) ⭐ 46,674 | 🐛 141 | 🌐 Python | 📅 2026-10-07 — Agent memory that learns. Automatically captures, indexes, and retrieves agent execution history to improve future task performance.
-* [CodeBurn](https://github.com/AgentSeal/codeburn) ⭐ 11,350 | 🐛 27 | 🌐 TypeScript | 📅 2026-10-07 — Claude Code token usage analytics. Breaks down token consumption by task, enabling cost attribution and optimization.
-* [Honcho](https://github.com/plastic-labs/honcho) ⭐ 7,499 | 🐛 162 | 🌐 Python | 📅 2026-10-07 — Agent state memory library. Provides the persistence layer for stateful agents — session history, user context, and learned preferences.
+* [claude-mem](https://github.com/thedotmack/claude-mem) ⭐ 98,212 | 🐛 122 | 🌐 TypeScript | 📅 2026-10-07 — Automatic session capture with AI compression and injection into future sessions. Solves the stateless-agent problem by giving Claude Code persistent memory across runs.
+* [Hindsight](https://github.com/vectorize-io/hindsight) ⭐ 47,183 | 🐛 156 | 🌐 Python | 📅 2026-10-08 — Agent memory that learns. Automatically captures, indexes, and retrieves agent execution history to improve future task performance.
+* [CodeBurn](https://github.com/AgentSeal/codeburn) ⭐ 11,356 | 🐛 23 | 🌐 TypeScript | 📅 2026-10-08 — Claude Code token usage analytics. Breaks down token consumption by task, enabling cost attribution and optimization.
+* [Honcho](https://github.com/plastic-labs/honcho) ⭐ 7,536 | 🐛 153 | 🌐 Python | 📅 2026-10-08 — Agent state memory library. Provides the persistence layer for stateful agents — session history, user context, and learned preferences.
 * [cq](https://github.com/nicholasgasior/cq) — Mozilla developer project enabling AI coding agents to share learned knowledge. A commons where agents deposit and retrieve solutions, avoiding redundant problem-solving. Has Claude Code and OpenCode plugins.
 
 ## Coding Agents
 
 The execution layer. In harness engineering, the agent is a commodity — the harness is the differentiator. These agents write code; everything above them determines whether that code is useful.
 
-* [Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐ 251,860 | 🐛 47,656 | 🌐 Python | 📅 2026-10-07 — Self-improving agent loop with persistent memory and self-generated skills. The agent that grows with you — learns from execution history and evolves its own capabilities over time.
-* [OpenCode](https://github.com/sst/opencode) ⭐ 212,163 | 🐛 6,246 | 🌐 TypeScript | 📅 2026-10-07 — Open-source coding agent with a plugin system (44 lifecycle hooks), server mode HTTP API, and TypeScript SDK. The most extensible harness integration point for custom workflows.
-* [Codex](https://github.com/openai/codex) ⭐ 128,167 | 🐛 21,149 | 🌐 Rust | 📅 2026-10-07 — OpenAI's coding agent. Cloud and CLI modes.
-* [Pi Mono](https://github.com/badlogic/pi-mono) ⭐ 113,151 | 🐛 284 | 🌐 TypeScript | 📅 2026-10-07 — AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods. Full-stack agent infrastructure in a single monorepo.
-* [Gemini CLI](https://github.com/google-gemini/gemini-cli) ⭐ 107,245 | 🐛 783 | 🌐 TypeScript | 📅 2026-10-07 — Google's CLI coding agent.
-* [Aider](https://github.com/paul-gauthier/aider) ⭐ 49,409 | 🐛 1,912 | 🌐 Python | 📅 2026-05-22 — AI pair programming in your terminal.
-* [GitHub Copilot CLI](https://github.com/github/copilot-cli) ⭐ 11,242 | 🐛 2,171 | 🌐 Shell | 📅 2026-10-07 — GitHub's CLI coding agent.
+* [Hermes Agent](https://github.com/NousResearch/hermes-agent) ⭐ 252,154 | 🐛 47,740 | 🌐 Python | 📅 2026-10-08 — Self-improving agent loop with persistent memory and self-generated skills. The agent that grows with you — learns from execution history and evolves its own capabilities over time.
+* [OpenCode](https://github.com/sst/opencode) ⭐ 212,339 | 🐛 6,239 | 🌐 TypeScript | 📅 2026-10-08 — Open-source coding agent with a plugin system (44 lifecycle hooks), server mode HTTP API, and TypeScript SDK. The most extensible harness integration point for custom workflows.
+* [Codex](https://github.com/openai/codex) ⭐ 128,364 | 🐛 21,471 | 🌐 Rust | 📅 2026-10-08 — OpenAI's coding agent. Cloud and CLI modes.
+* [Pi Mono](https://github.com/badlogic/pi-mono) ⭐ 113,483 | 🐛 308 | 🌐 TypeScript | 📅 2026-10-08 — AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods. Full-stack agent infrastructure in a single monorepo.
+* [Gemini CLI](https://github.com/google-gemini/gemini-cli) ⭐ 107,253 | 🐛 780 | 🌐 TypeScript | 📅 2026-10-08 — Google's CLI coding agent.
+* [Aider](https://github.com/paul-gauthier/aider) ⭐ 49,426 | 🐛 1,912 | 🌐 Python | 📅 2026-05-22 — AI pair programming in your terminal.
+* [GitHub Copilot CLI](https://github.com/github/copilot-cli) ⭐ 11,247 | 🐛 2,173 | 🌐 Shell | 📅 2026-10-08 — GitHub's CLI coding agent.
 * [Claude Code](https://code.claude.com/) — Anthropic's coding agent. The team's own harness pioneered "seeing like an agent" — progressive disclosure via skill files, fewer composable tools over many narrow ones. Agent Teams enables multi-agent coordination. The Claude Agent SDK extends the harness beyond coding.
 * [Kiro CLI](https://kiro.dev/) — AWS's CLI coding agent with spec-driven workflow.
 * [Amp](https://amp.dev/) — Sourcegraph's coding agent.
@@ -145,9 +145,9 @@ The execution layer. In harness engineering, the agent is a commodity — the ha
 
 The planning layer addresses the biggest harness gap: agents can write code, but someone has to decide what to build. "Repository knowledge is the system of record" — these tools generate the specs and requirements that agents consume.
 
-* [Spec Kit](https://github.com/github/spec-kit) ⭐ 140,509 | 🐛 262 | 🌐 Python | 📅 2026-10-07 — GitHub's spec generation toolkit.
-* [Archon](https://github.com/coleam00/Archon) ⭐ 23,637 | 🐛 243 | 🌐 TypeScript | 📅 2026-10-07 — First open-source harness builder. Makes AI coding deterministic and repeatable through structured harness configuration.
-* [Open Pencil](https://github.com/open-pencil/open-pencil) ⭐ 8,789 | 🐛 65 | 🌐 TypeScript | 📅 2026-10-07 — Open-source AI-native design editor (MIT). 75+ tools and an MCP server let coding agents read/write .fig files headlessly.
+* [Spec Kit](https://github.com/github/spec-kit) ⭐ 140,647 | 🐛 254 | 🌐 Python | 📅 2026-10-08 — GitHub's spec generation toolkit.
+* [Archon](https://github.com/coleam00/Archon) ⭐ 23,645 | 🐛 251 | 🌐 TypeScript | 📅 2026-10-08 — First open-source harness builder. Makes AI coding deterministic and repeatable through structured harness configuration.
+* [Open Pencil](https://github.com/open-pencil/open-pencil) ⭐ 8,812 | 🐛 67 | 🌐 TypeScript | 📅 2026-10-08 — Open-source AI-native design editor (MIT). 75+ tools and an MCP server let coding agents read/write .fig files headlessly.
 * [Kiro IDE](https://kiro.dev/) — AWS's spec-driven development IDE. Generates structured specs and manages requirements.
 * [OpenSpec](https://github.com/FissionAI/openspec) — Spec-driven development CLI. Generate structured specs from natural language.
 * [agents.md](https://agents.md/) — Open standard for project-level agent instructions. Following the principle that "AGENTS.md is a table of contents, not an encyclopedia" — it should point to deeper sources of truth.
@@ -156,7 +156,7 @@ The planning layer addresses the biggest harness gap: agents can write code, but
 
 ## Standards & Protocols
 
-* [GitAgent](https://github.com/open-gitagent/gitagent) ⭐ 710 | 🐛 55 | 🌐 Rust | 📅 2026-08-20 — Git-native, framework-agnostic standard for defining AI agents. Your repo is the agent: agent.yaml manifest + SOUL.md identity + RULES.md constraints.
+* [GitAgent](https://github.com/open-gitagent/gitagent) ⭐ 712 | 🐛 56 | 🌐 Rust | 📅 2026-08-20 — Git-native, framework-agnostic standard for defining AI agents. Your repo is the agent: agent.yaml manifest + SOUL.md identity + RULES.md constraints.
 * [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) — Open standard for connecting AI models to external tools and data sources.
 * [agents.md](https://agents.md/) — Open standard for project-level agent configuration.
 * [AGENTS.md](https://openai.com/index/introducing-agents-md/) — OpenAI's convention for repository-level agent instructions.
@@ -167,7 +167,7 @@ The planning layer addresses the biggest harness gap: agents can write code, but
 
 Development methodologies and workflow definitions designed for agentic software development.
 
-* [AI-DLC Workflows](https://github.com/awslabs/aidlc-workflows) ⭐ 5,044 | 🐛 263 | 🌐 TypeScript | 📅 2026-10-07 — AWS's AI-Driven Development Life Cycle. A three-phase adaptive workflow (understand → plan → build) implemented as agent rules for Amazon Q, Claude Code, and other coding agents. Generates structured specs, enforces quality gates, and keeps humans in control. Based on the [AI-DLC methodology](https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/).
+* [AI-DLC Workflows](https://github.com/awslabs/aidlc-workflows) ⭐ 5,084 | 🐛 274 | 🌐 TypeScript | 📅 2026-10-08 — AWS's AI-Driven Development Life Cycle. A three-phase adaptive workflow (understand → plan → build) implemented as agent rules for Amazon Q, Claude Code, and other coding agents. Generates structured specs, enforces quality gates, and keeps humans in control. Based on the [AI-DLC methodology](https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/).
 
 ## Reference & Knowledge
 
@@ -225,4 +225,4 @@ Contributions welcome! When suggesting additions, include:
 
 ***
 
-> _Enhansomed by [enhansome](https://github.com/enhansome) on 2026-10-07._
+> _Enhansomed by [enhansome](https://github.com/enhansome) on 2026-10-08._
